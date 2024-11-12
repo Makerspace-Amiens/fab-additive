@@ -6,11 +6,11 @@ hero_darken: true
 image: "placeholder.png"
 component_toc: true
 doc_header: true
-type: none
+type: course
 
-title: Exemple de Tutoriel
-subtitle: Suivez ces étapes pour accomplir votre tâche
-description: Ce tutoriel explique les étapes de base pour réaliser une tâche.
+title: Historique de l'impression 3D
+subtitle: 
+description: 
 author: Adrien Bracq
 
 time: 2
