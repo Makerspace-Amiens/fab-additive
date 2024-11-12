@@ -1,6 +1,6 @@
 ---
-title: Craft The Docs
-subtitle: Template de site pour réaliser de la documentation
+title: Fabrication Additive
+subtitle: Ressources pour la fabrication additive au MakerSpace - UniLaSalle Amiens
 layout: page
 hero_height: is-large
 hero_darken: true
