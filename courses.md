@@ -1,6 +1,6 @@
 ---
 title: Formations 
-subtitle: Liste de formaiton sur l'impression 3D
+subtitle: Liste de formations sur l'impression 3D
 layout: documentation-category
 type: course
 show_sidebar: false
