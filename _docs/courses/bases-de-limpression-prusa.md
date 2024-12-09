@@ -12,7 +12,7 @@ title: Les Bases de l'impression
 subtitle: Document de Prusa Research
 description: 
 author: Adrien Bracq
-external_link : ../../assets/pdf/prusa-les-bases-de-limpression-3d.pdf
+external_link : https://makerspace-amiens.fr/fab-additive/assets/pdf/prusa-les-bases-de-limpression-3d.pdf
 
 time: 2
 difficulty: 1
