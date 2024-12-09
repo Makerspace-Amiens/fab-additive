@@ -12,7 +12,6 @@ title: Le workflow logiciel
 subtitle: 
 description: 
 author: Adrien Bracq
-external_link : https://moodle-amiens.unilasalle.fr
 
 time: 2
 difficulty: 1
