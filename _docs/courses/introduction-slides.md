@@ -12,7 +12,7 @@ title: Introduction à l'impression 3D
 subtitle: Slides du cours
 description: 
 author: Adrien Bracq
-external_link : /assets/pdf/initiation-fabrication-additive.pdf
+external_link : ../../assets/pdf/initiation-fabrication-additive.pdf
 
 time: 2
 difficulty: 1
