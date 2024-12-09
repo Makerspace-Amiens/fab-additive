@@ -1,4 +1,4 @@
-style: is-light
+style: is-dark
 height: is-medium
 items:
   - title: Informations générales
@@ -8,16 +8,16 @@ items:
     call_to_action_name: Informations
     call_to_action_link: /informations
 
-  - title: Autres infos
+  - title: Formations
     icon: fa-toolbox
     description: >
-      D'autres infos ici
-    call_to_action_name: Voir les infos
-    call_to_action_link: /informations
+      Les supports de cours
+    call_to_action_name: Voir les cours
+    call_to_action_link: /courses
 
-  - title: Autres infos
+  - title: tutoriels
     description: >
-      D'autres infos ici
+      Tutoriels
     icon: fa-cogs
-    call_to_action_name: Voir les infos
-    call_to_action_link: /informations
+    call_to_action_name: Voir les tutoriels
+    call_to_action_link: /tutorials

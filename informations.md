@@ -9,9 +9,9 @@ title: Ressources pour la Fabrication Additive
 subtitle: Tutoriels, guides et cours pour débutants et experts
 ---
 
-Ce site est dédié à la fabrication additive, aussi appelée impression 3D. Vous y trouverez des tutoriels, des cours, et des guides pratiques pour tous les niveaux, que vous soyez débutant ou expérimenté. Le but est de vous fournir les connaissances et les outils nécessaires pour maîtriser la fabrication additive au sein de notre MakerSpace.
+## 1 - Objectifs 
 
-## 1 - Objectifs de cette page
+Ce site est dédié à la fabrication additive, aussi appelée impression 3D. Vous y trouverez des tutoriels, des cours, et des guides pratiques pour tous les niveaux, que vous soyez débutant ou expérimenté. Le but est de vous fournir les connaissances et les outils nécessaires pour maîtriser la fabrication additive au sein de notre MakerSpace.
 
 - **Offrir une base solide** : Permettre aux débutants de se familiariser avec l’impression 3D et les différentes technologies de fabrication additive.
 - **Encourager l'auto-formation** : Fournir des ressources pour que chacun puisse progresser à son rythme.

@@ -4,7 +4,7 @@ subtitle: Ressources pour la fabrication additive au MakerSpace - UniLaSalle Ami
 layout: page
 hero_height: is-large
 hero_darken: true
-hero_image: assets/img/placeholder.png
+hero_image: assets/img/home.jpg
 callouts: home_callouts
 show_sidebar: false
 hide_content: true
