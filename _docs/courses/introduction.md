@@ -9,11 +9,11 @@ doc_header: true
 type: course
 
 title: Introduction à l'impression 3D
-subtitle: 
-description: 
+subtitle: Présentation & Historique
+description: Une introduction à l'impression 3D et à son historique
 author: Adrien Bracq
 
-time: 2
+time: 3
 difficulty: 1
 
 prerequisites:
@@ -577,5 +577,5 @@ Le projet RepRap visait à démocratiser la fabrication en permettant à chacun 
   include card_collections.html
   title="Pour aller plus loin"
   description="Explorez d'autres formations pour approfondir vos connaissances"
-  type="courses"
+  type="course"
 %}
