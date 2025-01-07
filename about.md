@@ -3,39 +3,24 @@ layout: documentation
 hide_hero: false
 doc_header: false
 component_toc: false
-hero_image: /assets/img/placeholder.png
+hero_image: /assets/img/journee_projet_01.jpg
 hero_darken: true
-title: À propos du Projet
-subtitle: Informations générales sur ce projet
+title: À propos du MakerSpace Amiens
+subtitle: Un espace collaboratif pour l'innovation et la créativité
 ---
 
-## À propos du projet
+## À propos du MakerSpace Amiens
 
-Ce projet vise à [décrire l’objectif principal du projet ici, par exemple : "développer une machine de dessin automatisée" ou "mettre en place un système de suivi pour les étudiants"]. Il s'agit d'une initiative qui combine innovation et apprentissage technique.
+Le MakerSpace Amiens est un espace dédié à l'innovation, au prototypage et à l'apprentissage technique collaboratif. Ouvert à tous, il permet aux étudiants, aux entrepreneurs, et aux passionnés de technologie de se rencontrer, d’expérimenter et de développer des projets en utilisant des outils et des technologies de fabrication numérique.
 
-Ce site de documentation est conçu pour fournir toutes les informations nécessaires pour comprendre, utiliser, et développer ce projet. Vous y trouverez des guides, des tutoriels, des ressources techniques, et des liens vers des supports utiles.
+Ce site de documentation vise à centraliser les ressources pédagogiques, les tutoriels, et les informations techniques pour faciliter l’accès et l’utilisation des équipements de fabrication additive et bien plus encore.
 
-## Objectifs
+## Objectifs du MakerSpace
 
-- **Objectif 1** : Décrire les fonctionnalités principales de ce projet.
-- **Objectif 2** : Faciliter la prise en main pour les utilisateurs et les contributeurs.
-- **Objectif 3** : Encourager la collaboration et le partage d'idées.
-
-## Équipe du projet
-
-Ce projet est géré et développé par une équipe d’étudiants et de professionnels engagés. 
-
-- **Nom de l'Équipe 1** - Rôle principal (ex : Responsable technique)
-- **Nom de l'Équipe 2** - Rôle secondaire (ex : Documentation et support)
-
-## Ressources
-
-Pour en savoir plus sur ce projet, consultez les sections suivantes :
-
-- [Documentation technique](#)
-- [Tutoriels](#)
-- [FAQ](#)
+- **Favoriser l’apprentissage** : Offrir un espace de formation pratique pour les utilisateurs de tous niveaux.
+- **Encourager l'innovation** : Permettre la réalisation de projets créatifs et technologiques dans un environnement collaboratif.
+- **Soutenir l'entrepreneuriat** : Accompagner les porteurs de projets en phase de prototypage et de développement.
 
 ---
 
-_Note : Cette page peut être enrichie avec des informations spécifiques au projet au fur et à mesure de son développement._
+_Note : Ce site évoluera avec de nouvelles ressources et mises à jour pour répondre aux besoins de la communauté._

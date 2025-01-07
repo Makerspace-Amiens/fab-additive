@@ -1,7 +1,7 @@
-title: Craft The Docs
-description: Craft your docs for the MakerSpace Amiens
+title: Fabrication Additive
+description: Ressources pour la fabrication additive au MakerSpace - UniLaSalle Amiens
 theme: bulma-clean-theme
-url: https://makerspace-amiens.fr/craft-the-docs
+url: https://makerspace-amiens.fr/fab-additive
 
 force_theme: light
 permalink: pretty

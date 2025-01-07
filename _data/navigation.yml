@@ -1,10 +1,11 @@
 - name: Informations
   link: /informations/
-- name: Blog
-  link: /blog/
+- name: Formation
+  link: /courses/
+- name: Machines
+  link: /machines/
 - name: Tutoriels
-  link: 
-  dropdown: 
-    - name: Tutoriels
-      link: /tutorials/
+  link: /tutorials/
+
+    
     

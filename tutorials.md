@@ -1,5 +1,5 @@
 ---
-title: Tutoriels
+title: Tutoriels Impression 3D
 subtitle: Liste de tutoriels
 layout: documentation-category
 type: tutorial
