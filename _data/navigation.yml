@@ -1,11 +1,6 @@
-- name: Informations
-  link: /informations/
 - name: Formation
   link: /courses/
 - name: Machines
   link: /machines/
 - name: Tutoriels
   link: /tutorials/
-
-    
-    
