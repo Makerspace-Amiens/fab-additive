@@ -126,8 +126,8 @@ Certains matériaux sont plus sujets à ce problème, comme les co-polyesters et
 
 **Solutions**
 - Séchez votre filament en utilisant un déshydrateur, cela peut prendre jusqu'à 24 heures.
-- Imprimez à partir d'une boîte de filament sec, comme la Nautilus Box.
-- Augmentez la distance de rétraction, la plupart des matériaux ne nécessitent pas plus de 1 à 2 mm de rétraction pour un extrudeur direct comme celui de la Nautilus.
+- Imprimez à partir d'une boîte de filament sec.
+- Augmentez la distance de rétraction, la plupart des matériaux ne nécessitent pas plus de 1 à 2 mm de rétraction pour un extrudeur direct.
 - Augmentez l'avance de pression. Des valeurs entre 0,01 et 0,1 devraient fonctionner pour la plupart des matériaux rigides, tandis que des valeurs plus élevées (toujours inférieures à 1) seront nécessaires pour les matériaux flexibles.
 - Réduisez la température d'impression de 5 à 10 °C.
 - Essayez d'activer la fonction « combing » dans votre slicer. Cela garde la buse au-dessus du remplissage pendant les déplacements, ce qui peut augmenter légèrement le temps d'impression mais cachera les fils à l'intérieur de la pièce. Notez qu'avec le « combing » activé, la buse ne se soulève pas pendant les déplacements, ce qui augmente les risques de décalages de couches ou de renversement de la pièce.
