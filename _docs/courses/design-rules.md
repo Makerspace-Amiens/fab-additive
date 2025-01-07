@@ -4,7 +4,7 @@ hide_hero: false
 hero_image: "page_1_img_20.png"
 hero_darken: true
 image: "page_1_img_20.png"
-component_toc: false
+component_toc: true
 doc_header: true
 type: course
 
@@ -23,176 +23,174 @@ prerequisites:
 todo: 10
 ---
 
-
 {% include step-tuto.html 
 greyBackground = true 
-content="**Base Chamfers**
+title = "Chanfreins de base"
+content="
+**Valeur recommandée** : ~0,3 mm (hauteur de la première couche + hauteur de couche)
 
-**Recommended Value**: ~0.3 mm (initial layer height + layer height)
-
-To improve the accuracy of the base edges of your part, it is a good idea to add a small chamfer of ~0.3 mm to all the edges that will be in contact with the print surface. This will reduce the chance of a slightly over “squished” first layer creating a lip around the base of the part. This is only relevant if you will be printing your part without a brim. If you are printing with a brim you will need to use a deburring tool our hobby knife to remove the brim a and clean up the base of the part anyway. "
+Pour améliorer la précision des bords de base de votre pièce, il est conseillé d'ajouter un petit chanfrein d’environ ~0,3 mm à tous les bords qui seront en contact avec la surface d'impression. Cela réduira les risques qu'une première couche légèrement trop écrasée crée une bavure autour de la base de la pièce. Cela n'est pertinent que si vous imprimez votre pièce sans bordure (brim). Si vous imprimez avec une bordure, vous devrez utiliser un outil d'ébavurage ou un couteau de loisir pour enlever la bordure et nettoyer la base de la pièce."
 image="page_1_img_20.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Base Corners**
+title = "Coins de base"
+content="
+**Valeur recommandée** : R > 4 mm
 
-**Recommended Value**: R > 4 mm
-
-For larger parts, it is recommended to round corners that are in contact with the printer’s build plate (print surface). Sharp corners result in the shrinking forces that happen as the part cools (warping) concentrating at one point, whereas rounded corners act to disperse these forces. The larger the radius of the curved corner, the better your chances of reducing warping should be, at least in theory. A corner radius of 4mm or more is recommended."
+Pour les pièces plus grandes, il est recommandé d’arrondir les coins en contact avec la surface d'impression. Les coins aigus concentrent les forces de rétrécissement qui surviennent lors du refroidissement de la pièce (gauchissement), tandis que les coins arrondis dispersent ces forces. Plus le rayon des coins arrondis est grand, meilleures sont vos chances de réduire le gauchissement, du moins en théorie. Un rayon de coin de 4 mm ou plus est recommandé."
 image="page_1_img_21.png" %}
 
 {% include step-tuto.html 
-greyBackground = true 
-content="**Bridging**
+greyBackground = true
+title = "Pontage"
+content="
+**Valeur recommandée** : < 10 mm
 
-**Recommended Value**: < 10 mm
-
-Horizontal bridges without support should not be longer than 10 mm to avoid print defects and failures. Either build vertical structures into your model to support the bridge or enable printed supports during slicing.You may find that you can bridge much larger gaps depending on the material and layer height, but keeping bridges <10 mm is a good starting point."
+Les ponts horizontaux sans support ne doivent pas dépasser 10 mm pour éviter les défauts et échecs d'impression. Intégrez des structures verticales dans votre modèle pour soutenir le pont ou activez les supports imprimés lors du tranchage. Vous pouvez constater que vous pouvez franchir des écarts beaucoup plus importants selon le matériau et la hauteur des couches, mais maintenir les ponts <10 mm est un bon point de départ."
 image="page_1_img_22.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Clearance**
+title = "Jeu"
+content="
+**Valeurs recommandées** : 
+- ~0,3 mm pour un ajustement lâche
+- ~0,15 mm pour un ajustement serré
 
-**Recommended Values**: 
-- ~0.3 mm for loose fit
-- ~0.15 mm for tight fit
-
-When 3D printed parts will fit together, a clearance of ~0.3 mm for loose fit and  ~0.15 mm for tight fit mm is recommended to ensure a good fit. The required clearance may vary slightly depending on material and geometry."
+Lorsque des pièces imprimées en 3D doivent s'emboîter, un jeu de ~0,3 mm pour un ajustement lâche et ~0,15 mm pour un ajustement serré est recommandé pour garantir un bon ajustement. Le jeu nécessaire peut varier légèrement en fonction du matériau et de la géométrie."
 image="page_1_img_23.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Emboss & Engrave (Horizontal)**
+title = "Relief et Gravure (Horizontal)"
+content="
+**Relief** :
+- Recommandé : >0,9 mm de large (2x largeur d'extrusion) x <0,9 mm de haut
+**Gravure** :
+- Recommandé : >0,5 mm de large x <0,9 mm de profondeur (2x largeur d'extrusion)
 
-**Emboss**:
-- Recommended: >0.9 mm wide (2x extrusion width) x <0.9 mm high
-**Engrave**:
-- Recommended: >0.5 mm wide x <0.9 mm deep (2x extrusion width)
-
-To ensure embossed or engraved details on a vertical surface are resolved and visible, the line width should be at least twice your nozzle diameter in depth. They can be a little bit larger but will start to sag if they are too big."
+Pour garantir que les détails en relief ou gravés sur une surface verticale soient bien définis et visibles, la largeur de la ligne doit être au moins deux fois le diamètre de votre buse en profondeur. Ils peuvent être un peu plus grands, mais risquent de s'affaisser s'ils sont trop volumineux."
 image="page_1_img_24.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Emboss & Engrave (Vertical)**
+title = "Relief et Gravure (Vertical)"
+content="
+**Relief** :
+- Recommandé : >0,9 mm de large (2x largeur d'extrusion) x <2 mm de haut
+**Gravure** :
+- Recommandé : >0,5 mm de large x <2 mm de profondeur
 
-**Emboss**:
-- Recommended: >0.9 mm wide (2x extrusion width) x <2 mm high
-**Engrave**:
-- Recommended: >0.5 mm wide x <2 mm deep
-
-To ensure embossed or engraved details on a horizontal surface are resolved the line width should be at least 0.5 mm wide for engraving and 0.9 mm wide for embossing. There is no limit on the height of the details, but modeling them 2 mm high will make the features clearly visible."
+Pour garantir que les détails en relief ou gravés sur une surface horizontale soient bien définis, la largeur de ligne doit être d'au moins 0,5 mm pour les gravures et 0,9 mm pour les reliefs. Il n'y a pas de limite à la hauteur des détails, mais les modéliser à 2 mm de haut permettra de rendre les éléments clairement visibles."
 image="page_1_img_25.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Feature Size**
+title = "Taille des Détails"
+content="
+**Valeur Recommandée** : >1,8 mm (4x largeur d'extrusion)
 
-**Recommended Value**: >1.8 mm (4x extrusion width)
-
-The minimum feature size for printed structures is 4 times your extrusion line width. A good rule of thumb for general modeling is making features no smaller than 1.8 mm.."
+La taille minimale des détails pour les structures imprimées est de 4 fois la largeur de la ligne d'extrusion. Une règle générale pour la modélisation est de ne pas créer de détails plus petits que 1,8 mm."
 image="page_1_img_26.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Fillets**
+title = "Congés"
+content="
+**Valeur Recommandée** : > ø1 mm
 
-**Recommended Value**: > ø1 mm
-
-Fillets are a great way to remove sharp corners or relieve stress concentrations at sharp corners. However, it is not recommended to model downward facing fillets on 3D printed parts. Chamfers are a good alternative for downward facing edges that you may wish to soften. Downward facing fillets will not cause your print to fail, but that may come out with poor aesthetic/surface quality. "
+Les congés sont une excellente solution pour éliminer les angles vifs ou réduire les concentrations de contraintes aux coins. Cependant, il n'est pas recommandé de modéliser des congés orientés vers le bas sur des pièces imprimées en 3D. Les chanfreins sont une bonne alternative pour les arêtes orientées vers le bas que vous souhaitez adoucir. Les congés orientés vers le bas n'entraîneront pas l'échec de l'impression, mais ils risquent de produire une qualité esthétique ou de surface médiocre."
 image="page_1_img_27.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Hole Size**
+title = "Taille des Trous"
+content="
+**Valeur Recommandée** : > ø2 mm
 
-**Recommended Value**: > ø2 mm
-
-It is not recommended to model holes with a diameter of less than 2 mm to ensure they are resolved. If an accurately sized hole of any size is necessary, undersize the hole and drill it out to the proper tolerance."
+Il n'est pas recommandé de modéliser des trous avec un diamètre inférieur à 2 mm pour garantir leur bonne définition. Si un trou d'une taille précise est nécessaire, modélisez-le légèrement plus petit, puis percez-le pour obtenir la tolérance appropriée."
 image="page_1_img_28.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Holes (Horizontal)**
+title = "Trous (Horizontaux)"
+content="
+**Décalage Recommandé** : a ≈ 0,3 mm
 
-**Recommended Offset**: a ≈ 0.3 mm
-
-In order to print horizontal holes with a better tolerance, it is recommended to model the additional features in the image where the offset distance a, is the layer height of your print. If you are using a small layer height like 100μm you should do 2*a. This will accommodate for any drooping that will occur in the steep overhang sections of printed horizontal holes and the “flattening” of the bottom of holes due to the stacked layer process."
+Pour imprimer des trous horizontaux avec une meilleure tolérance, il est recommandé de modéliser les caractéristiques supplémentaires indiquées sur l'image où la distance de décalage a correspond à la hauteur de couche de votre impression. Si vous utilisez une petite hauteur de couche comme 100 μm, utilisez 2*a. Cela compensera tout affaissement qui se produira dans les sections en porte-à-faux abruptes des trous horizontaux imprimés ainsi que l'aplatissement du bas des trous dû au processus de superposition des couches."
 image="page_1_img_29.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Overhangs**
+title = "Porte-à-faux"
+content="
+**Valeur Recommandée** : < 50°
 
-**Recommended Value**: < 50°
-
-To prevent layers from drooping or curling on printed overhangs, it is recommended to avoid printing unsupported overhangs at angles over 50° (measured from the vertical axis down). Overhang quality can also be material-dependent, so some materials may require support at lower angles than others."
+Pour éviter que les couches ne s'affaissent ou ne se recourbent sur des porte-à-faux imprimés, il est recommandé d'éviter d'imprimer des porte-à-faux non supportés avec des angles supérieurs à 50° (mesurés à partir de l'axe vertical vers le bas). La qualité des porte-à-faux peut également dépendre du matériau utilisé, certains matériaux nécessitant un support à des angles plus faibles que d'autres."
 image="page_1_img_30.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Pins**
+title = "Goupilles"
+content="
+**Valeur Recommandée** : > ø1,8 mm (4x largeur d'extrusion)
 
-**Recommended Value**: > ø1.8 mm (4x extrusion width)
-
-In order to accurately resolve pins, their diameter should be at least four times the extrusion line width to ensure at least two full perimeters are printed, a good rule of thumb is ø1.8 mm. If functional pins are required in your model, it may be better to use store bought pins and model holes into both sides of the joint."
+Pour garantir une bonne définition des goupilles, leur diamètre doit être au moins quatre fois la largeur de la ligne d'extrusion afin d'assurer l'impression d'au moins deux périmètres complets. Une bonne règle générale est un diamètre de ø1,8 mm. Si votre modèle nécessite des goupilles fonctionnelles, il peut être préférable d'utiliser des goupilles du commerce et de modéliser des trous dans les deux côtés de l'articulation."
 image="page_1_img_31.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Threads (Modeled)**
+title = "Filetages (Modélisés)"
+content="
+**Valeur Recommandée** : > M5 ou UNC #10
 
-**Recommended Value**: > M5 or UNC #10
-
-3D printing modeled threads can work well for larger thread sizes. It is not recommended to model threads smaller than M5 or UNC #10 so that they will function effectively. If you need threads smaller than M5 or #10, they should be added with post-processing techniques such as a thread tap, or heat set threaded inserts. DO NOT use modeled/printed threads for horizontal holes."
+Les filetages modélisés pour l'impression 3D peuvent bien fonctionner pour les tailles de filetage plus grandes. Il n'est pas recommandé de modéliser des filetages plus petits que M5 ou UNC #10 afin qu'ils fonctionnent efficacement. Si vous avez besoin de filetages plus petits que M5 ou #10, ils doivent être ajoutés avec des techniques de post-traitement telles que le taraudage ou l'utilisation d'inserts filetés à chaud. NE PAS utiliser de filetages modélisés/imprimés pour les trous horizontaux."
 image="page_1_img_32.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Threads (Post-Process)**
+title = "Filetages (Post-Traitement)"
+content="
+- Taraudage : Modélisez un trou à 90 % du diamètre du filetage.
+- Auto-taraudage : Modélisez un trou à 96 % du diamètre du filetage.
+- Inserts à chaud : Modélisez un trou à 98 % du diamètre extérieur de l'insert.
 
-- Tap: Model hole at 90% of thread diameter.
-- Self-tap: Model hole at 96% of thread diameter.
-- Heat-set inserts: Model hole at 98% of insert’s outer diameter.
-
-Threads can be added in post-processing a few different ways. You can thread tap the hole, in which case model the hole at 90% of the thread diameter. You can self-tap the screw into an unthreaded hole, in which case model the hole at 96% of the thread diameter. You can also use heat-set inserts, in which case model the hole at 98% of the inserts outer diameter."
+Les filetages peuvent être ajoutés lors du post-traitement de plusieurs façons. Vous pouvez tarauder le trou, dans ce cas modélisez le trou à 90 % du diamètre du filetage. Vous pouvez insérer une vis auto-taraudeuse dans un trou non fileté, dans ce cas modélisez le trou à 96 % du diamètre du filetage. Vous pouvez également utiliser des inserts filetés à chaud, dans ce cas modélisez le trou à 98 % du diamètre extérieur de l'insert."
 image="page_1_img_33.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Unsupported Edges**
+title = "Arêtes Non Supportées"
+content="
+**Valeur Recommandée** : < 0,9 mm (2x largeur d'extrusion)
 
-**Recommended Value**: < 0.9 mm (2x extrusion width)
-
-It is generally recommended to avoid printing unsupported, horizontal structures that are more than two extrusion line widths wide, a good rule of thumb is 0.9 mm. It is unlikely that larger unsupported edges will cause print failures, but they will cause serious cosmetic issues. If the structures are necessary for your model, altering print orientation and/ or enabling supports will make them printable."
+Il est généralement recommandé d'éviter d'imprimer des structures horizontales non supportées de plus de deux largeurs de ligne d'extrusion, une bonne règle générale est 0,9 mm. Il est peu probable que des arêtes non supportées plus larges provoquent des échecs d'impression, mais elles entraîneront des problèmes esthétiques importants. Si ces structures sont nécessaires pour votre modèle, modifier l'orientation d'impression et/ou activer les supports les rendra imprimables."
 image="page_1_img_34.png" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Unsupported Holes**
+title = "Trous Non Supportés"
+content="
+**Valeur Recommandée** : Extrusion 1 = hauteur de couche, Extrusion 2 = hauteur de couche x 2
 
-**Recommended Value**: Extrude 1 = layer height, Extrude 2 = layer height x 2
+Sans des considérations de conception particulières, les trous traversant des ponts non supportés ne s'imprimeront pas correctement. Cette technique peut être utilisée pour imprimer de tels trous sans ajouter de supports à votre modèle.
 
-Without special design considerations, holes through unsupported bridges will not print successfully. This technique can be used to print such holes without adding supports to your model.
+Lors de la conception de votre pièce, extrudez deux rectangles tangents à votre trou :
 
-When designing your part, extrude two rectangles tangent to your hole
+- La première extrusion doit avoir une épaisseur correspondant à la hauteur de couche que vous prévoyez d'imprimer.
+- La deuxième extrusion doit avoir une épaisseur correspondant à deux fois la hauteur de couche que vous prévoyez d'imprimer.
 
-The first extrude should be as thick as the layer height you intend to print with
-
-The second extrude should be twice the layer height you intend to print with
-
-This technique can be a little tricky to visualize until you have tried it a few times."
-image="page_1_img_35.png" %}
+Cette technique peut être un peu difficile à visualiser jusqu'à ce que vous l'ayez essayée plusieurs fois."
+image="page_1_img_35.jpeg" %}
 
 {% include step-tuto.html 
 greyBackground = true 
-content="**Wall Thickness**
+title = "Épaisseur des Parois"
+content="
+**Valeur Recommandée** : > 0,9 mm (2x largeur d'extrusion)
 
-**Recommended Value**: > 0.9 mm (2x extrusion width)
-
-It is strongly recommended to model walls at least two extrusions wide, generally this will be 0.9 mm. Thinner walls can have issues printing successfully and will not be very strong. Perimeters are the greatest source of strength in a 3D printed part, so if strength is important it is recommended to make walls more than two perimeters thick. Increasing perimeters will need adjustments in both modeling and slicing."
+Il est fortement recommandé de modéliser des parois d'au moins deux largeurs d'extrusion, généralement 0,9 mm. Des parois plus fines peuvent poser des problèmes d'impression et ne seront pas très solides. Les périmètres sont la principale source de solidité dans une pièce imprimée en 3D, donc si la solidité est importante, il est recommandé de rendre les parois plus épaisses que deux périmètres. L'augmentation des périmètres nécessitera des ajustements dans la modélisation et le tranchage."
 image="page_1_img_36.png" %}
 
 ---
