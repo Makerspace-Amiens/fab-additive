@@ -65,10 +65,9 @@ image="page_1_img_23.png" %}
 greyBackground = true 
 title = "Relief et Gravure (Horizontal)"
 content="
-**Relief** :
-- Recommandé : >0,9 mm de large (2x largeur d'extrusion) x <0,9 mm de haut
-**Gravure** :
-- Recommandé : >0,5 mm de large x <0,9 mm de profondeur (2x largeur d'extrusion)
+**Recommandé** :
+- **Relief** : >0,9 mm de large (2x largeur d'extrusion) x <0,9 mm de haut
+- **Gravure** :  >0,5 mm de large x <0,9 mm de profondeur (2x largeur d'extrusion)
 
 Pour garantir que les détails en relief ou gravés sur une surface verticale soient bien définis et visibles, la largeur de la ligne doit être au moins deux fois le diamètre de votre buse en profondeur. Ils peuvent être un peu plus grands, mais risquent de s'affaisser s'ils sont trop volumineux."
 image="page_1_img_24.png" %}
@@ -77,10 +76,9 @@ image="page_1_img_24.png" %}
 greyBackground = true 
 title = "Relief et Gravure (Vertical)"
 content="
-**Relief** :
-- Recommandé : >0,9 mm de large (2x largeur d'extrusion) x <2 mm de haut
-**Gravure** :
-- Recommandé : >0,5 mm de large x <2 mm de profondeur
+**Recommandé** :
+- **Relief** : >0,9 mm de large (2x largeur d'extrusion) x <2 mm de haut
+- **Gravure** : >0,5 mm de large x <2 mm de profondeur
 
 Pour garantir que les détails en relief ou gravés sur une surface horizontale soient bien définis, la largeur de ligne doit être d'au moins 0,5 mm pour les gravures et 0,9 mm pour les reliefs. Il n'y a pas de limite à la hauteur des détails, mais les modéliser à 2 mm de haut permettra de rendre les éléments clairement visibles."
 image="page_1_img_25.png" %}
@@ -152,9 +150,9 @@ image="page_1_img_32.png" %}
 greyBackground = true 
 title = "Filetages (Post-Traitement)"
 content="
-- Taraudage : Modélisez un trou à 90 % du diamètre du filetage.
-- Auto-taraudage : Modélisez un trou à 96 % du diamètre du filetage.
-- Inserts à chaud : Modélisez un trou à 98 % du diamètre extérieur de l'insert.
+- **Taraudage** : Modélisez un trou à 90 % du diamètre du filetage.
+- **Auto-taraudage** : Modélisez un trou à 96 % du diamètre du filetage.
+- **Inserts à chaud** : Modélisez un trou à 98 % du diamètre extérieur de l'insert.
 
 Les filetages peuvent être ajoutés lors du post-traitement de plusieurs façons. Vous pouvez tarauder le trou, dans ce cas modélisez le trou à 90 % du diamètre du filetage. Vous pouvez insérer une vis auto-taraudeuse dans un trou non fileté, dans ce cas modélisez le trou à 96 % du diamètre du filetage. Vous pouvez également utiliser des inserts filetés à chaud, dans ce cas modélisez le trou à 98 % du diamètre extérieur de l'insert."
 image="page_1_img_33.png" %}
