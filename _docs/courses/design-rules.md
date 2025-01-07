@@ -11,16 +11,11 @@ type: course
 title: Règles de conception et conseils
 subtitle: Concevoir pour l'impression 3D
 description: Un ensemble de règles et de conseils pour mieux concevoir à destination de l'impression 3D
-author: Adrien Bracq
+author: Adrien Bracq - Derivated from hydraresearch3d.com
 
 time: 2
 difficulty: 1
 
-prerequisites:
-  - label: Aucun pré-requis nécessaire
-    link: ""
-
-todo: 10
 ---
 
 {% include step-tuto.html 
@@ -190,6 +185,15 @@ content="
 
 Il est fortement recommandé de modéliser des parois d'au moins deux largeurs d'extrusion, généralement 0,9 mm. Des parois plus fines peuvent poser des problèmes d'impression et ne seront pas très solides. Les périmètres sont la principale source de solidité dans une pièce imprimée en 3D, donc si la solidité est importante, il est recommandé de rendre les parois plus épaisses que deux périmètres. L'augmentation des périmètres nécessitera des ajustements dans la modélisation et le tranchage."
 image="page_1_img_36.png" %}
+
+---
+
+{% include message.html 
+title="Information" 
+message="Le contenu est dérivé du site [https://www.hydraresearch3d.com](https://www.hydraresearch3d.com) sous licence 
+[**CC BY-SA 4.0** (Attribution-ShareAlike 4.0 International)](https://creativecommons.org/licenses/by-sa/4.0/)" 
+status="is-info" 
+icon="fas fa-info-circle" %}
 
 ---
 
