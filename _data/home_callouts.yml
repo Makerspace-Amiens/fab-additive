@@ -1,23 +1,23 @@
 style: is-dark
 height: is-medium
 items:
-  - title: Informations générales
-    icon: fa-info-circle
-    description: >
-      Retrouvez les informations principales du site
-    call_to_action_name: Informations
-    call_to_action_link: /informations
-
   - title: Formations
-    icon: fa-toolbox
     description: >
       Les supports de cours
+    icon: fa-toolbox
     call_to_action_name: Voir les cours
     call_to_action_link: /courses
 
-  - title: tutoriels
+  - title: Machines
     description: >
-      Tutoriels
+      Découvrez nos imprimantes
+    icon: fa-cube
+    call_to_action_name: Voir les machines
+    call_to_action_link: /tutorials
+
+  - title: Tutoriels
+    description: >
+      Commencer l'impression 3D
     icon: fa-cogs
     call_to_action_name: Voir les tutoriels
     call_to_action_link: /tutorials
