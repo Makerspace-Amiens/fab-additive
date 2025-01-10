@@ -175,6 +175,44 @@ Si vous entendez des bruits de crépitement, voyez de la vapeur s'échapper de v
 "
 image="WetvDry1000.png" %}
 
+{% include step-tuto.html 
+greyBackground = true 
+title = "Sur-Extrusion (Over-Extrusion)"
+content="
+La sur-extrusion se produit la quantité de plastique extrudée n'est pas cohérente entre le GCode et ce que la machine extrude reelement. La plupart des imprimantes 3D ne peuvent pas surveiller la quantité réelle de plastique extrudé. Si les paramètres d'extrusion sont mal configurés, l'imprimante peut extruder plus de plastique que prévu, entraînant un excès qui peut altérer les dimensions extérieures de la pièce.
+
+Pour résoudre ce problème :
+
+- Vérifiez vos paramètres d'extrusion.
+- Consultez les réglages liés à la sous-extrusion (mais ajustez-les dans la direction opposée). Par exemple, si augmenter le multiplicateur d'extrusion corrige la sous-extrusion, réduire ce multiplicateur peut résoudre la sur-extrusion.
+- Il est également possible que vous utilisiez des paramètres de buse incorrects. Vérifiez que vous avez sélectionné la bonne machine avec les paramètres de buse adaptés au processus d'impression.
+"
+image="over-extruding-1024x1024-1.jpg" %}
+
+{% include step-tuto.html 
+greyBackground = true 
+title = "Sous-Extrusion"
+content=" 
+Chaque profil dans votre slicer inclut des paramètres qui déterminent la quantité de plastique que l’imprimante 3D doit extruder. Cependant, comme l’imprimante ne fournit pas de retour sur la quantité réelle de plastique sortant de la buse, il est possible que moins de plastique soit extrudé que prévu par le logiciel (ce que l’on appelle la sous-extrusion). Si cela se produit, vous pouvez commencer à remarquer des espaces entre les extrusions adjacentes de chaque couche.
+
+Le moyen le plus fiable de vérifier si votre imprimante extrude suffisamment de plastique est d'imprimer un simple cube de 20 mm de haut avec au moins 3 périmètres. En haut du cube, vérifiez si les 3 périmètres sont solidement liés. S’il y a des espaces entre les 3 périmètres, cela indique une sous-extrusion. Si les 3 périmètres se touchent et n’ont aucun espace, vous faites probablement face à un autre problème.
+
+Si vous déterminez que vous êtes en situation de sous-extrusion, plusieurs causes possibles sont à considérer, résumées ci-dessous.
+
+**Solutions**
+
+- **Diamètre de filament incorrect :**
+
+  La première chose à vérifier est que le logiciel connaît le diamètre du filament que vous utilisez. Vérifiez que cette valeur correspond au filament que vous avez chargé dans votre machine. Il peut être utile de mesurer votre filament vous-même à l’aide d’un pied à coulisse pour confirmer que le diamètre spécifié dans le logiciel est correct. Les valeurs les plus courantes pour le diamètre du filament sont 1,75 mm et 2,85 mm. La plupart des bobines incluent également le diamètre correct sur l’emballage.
+
+- **Augmentez le multiplicateur d'extrusion :**
+
+  Si le diamètre du filament est correct mais que vous rencontrez toujours des problèmes de sous-extrusion, vous devrez ajuster le multiplicateur d’extrusion. Ce paramètre très utile dans votre slicer vous permet de modifier facilement la quantité de plastique extrudé (également appelée taux de flux dans certains logiciels). 
+
+  Vous pouvez trouver ce paramètre en allant dans les paramètres. Chaque extrudeur de votre imprimante peut avoir un multiplicateur d’extrusion unique, alors si vous essayez de modifier le flux pour un extrudeur spécifique, assurez-vous de le sélectionner la bonne machine.
+
+  Par exemple, si votre multiplicateur d’extrusion était précédemment réglé sur 1,0 et que vous le changez en 1,05, cela signifie que vous extruderez 5 % de plastique en plus qu’auparavant. Pour le PLA, un multiplicateur d’extrusion typique se situe autour de 0,9, tandis que l’ABS tend à être plus proche de 1,0. Essayez d’augmenter votre multiplicateur d’extrusion de 5 %, puis réimprimez le cube de test pour voir si les espaces entre les périmètres ont disparu."
+image="under-extruding.jpg" %}
 
 ---
 
