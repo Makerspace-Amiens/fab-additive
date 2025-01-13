@@ -214,6 +214,60 @@ Si vous déterminez que vous êtes en situation de sous-extrusion, plusieurs cau
   Par exemple, si votre multiplicateur d’extrusion était précédemment réglé sur 1,0 et que vous le changez en 1,05, cela signifie que vous extruderez 5 % de plastique en plus qu’auparavant. Pour le PLA, un multiplicateur d’extrusion typique se situe autour de 0,9, tandis que l’ABS tend à être plus proche de 1,0. Essayez d’augmenter votre multiplicateur d’extrusion de 5 %, puis réimprimez le cube de test pour voir si les espaces entre les périmètres ont disparu."
 image="under-extruding.jpg" %}
 
+{% include step-tuto.html 
+greyBackground = true 
+title = "Petits Détails Non Imprimés"
+content="
+La plupart des imprimantes 3D disposent d'une taille de buse fixe qui détermine la résolution des pièces dans la direction XY, la taille de buse la plus populaire étant de 0,4 mm. Bien que cela fonctionne bien pour la plupart des pièces, vous pouvez rencontrer des problèmes lorsque vous tentez d’imprimer des détails extrêmement fins, plus petits que la taille de la buse. Par exemple, si vous essayez d’imprimer un mur de 0,2 mm d’épaisseur avec une buse de 0,4 mm de diamètre, il est possible que ce mur fin ne s’affiche pas dans l’aperçu de votre slicer. Si vous avez souvent besoin d’imprimer des caractéristiques très fines, voici les meilleures options à envisager pour ces impressions.
+
+**Solutions Courantes**
+
+- **Activer le mode Arachne pour les murs fins**
+
+  Orca Slicer propose le mode Arachne, conçu pour améliorer l'impression de murs très fins et de caractéristiques extérieures complexes. Ce mode ajuste dynamiquement la largeur de l'extrusion pour mieux s'adapter aux zones étroites du modèle. Pour activer ce mode :
+
+  - Accédez aux paramètres de votre trancheur Orca Slicer.
+  - Dans l'onglet Extrusion (ou un onglet similaire), cherchez l'option Mode d'extrusion.
+  - Activez le mode Arachne.
+  - Une fois activé, relancez l'aperçu du modèle. Vous remarquerez que les petits détails sont désormais imprimés avec des extrusions optimisées pour ces caractéristiques fines.
+
+  Le mode Arachne réduit le besoin de modifier manuellement le modèle ou les paramètres pour les zones étroites, tout en maintenant une qualité d'impression optimale pour les autres sections. Ce paramètre est particulièrement utile pour les impressions avec des murs plus fins que la largeur d'extrusion standard.
+
+- **Redessinez la pièce pour inclure des détails plus épais**
+  
+  Si ces caractéristiques fines continuent de poser problème, une autre option consiste à redessiner la pièce pour inclure uniquement des détails plus grands que le diamètre de votre buse. Cela implique généralement de modifier le modèle 3D dans le logiciel de CAO d'origine pour ajuster la taille des petits détails. Une fois les caractéristiques épaissies, réimportez le modèle dans votre slicer pour vérifier que votre imprimante peut reproduire la forme 3D créée.
+
+- **Installez une buse avec un diamètre plus petit**
+  
+  Dans de nombreux cas, il n’est pas possible de modifier le modèle 3D d’origine. Par exemple, il peut s’agir d’une pièce conçue par quelqu’un d’autre ou téléchargée depuis Internet. Dans ce cas, envisagez d’acquérir une seconde buse pour votre imprimante 3D permettant d’imprimer des détails plus fins. De nombreuses imprimantes ont une buse amovible, ce qui rend ces ajustements après-vente assez simples. Par exemple, de nombreux utilisateurs achètent une buse de 0,3 ou 0,2 mm en complément d'une buse de 0,4 ou 0,6 mm pour disposer de deux options. Consultez le fabricant de votre imprimante pour obtenir des instructions précises sur l’installation d’une buse plus petite.
+"
+image="small-features-not-printed2-1024x1024-1.jpg" %}
+
+{% include step-tuto.html 
+greyBackground = true 
+title = "Arrêt d'Extrusion en Cours d'Impression"
+content="
+Si votre imprimante extrudait correctement au début de l'impression, mais a soudainement cessé d'extruder plus tard, il existe généralement quelques causes probables à ce problème. Voici les explications pour chaque cause fréquente et les solutions correspondantes. Si l’extrusion ne fonctionnait pas dès le début de l’impression, consultez la section Pas d’extrusion au démarrage de l’impression.
+
+**Solutions Courantes**
+  - **Rupture de filament**
+  
+  Cela peut sembler évident, mais avant d'explorer d'autres causes, vérifiez que vous avez encore du filament dans la buse. Si la bobine est vide, chargez une nouvelle bobine avant de reprendre l'impression.
+
+  - **Le filament a été usé par la roue d'entraînement**
+  
+  Pendant l'impression, le moteur de l'extrudeur tourne constamment pour pousser le filament dans la buse. Si vous essayez d'imprimer trop rapidement ou d'extruder une quantité excessive de plastique, ce moteur peut user le filament jusqu'à ce que la roue d'entraînement n'ait plus de prise. Si le moteur de l'extrudeur tourne, mais que le filament ne bouge pas, c'est probablement la cause. Consultez la section Filament broyé pour plus de détails sur la résolution de ce problème.
+
+  - **L'extrudeur est bouché**
+  
+  Si les causes précédentes ne s'appliquent pas, il est très probable que l'extrudeur soit bouché. Si cela se produit en cours d'impression, vérifiez que le filament est propre et que la bobine n'est pas couverte de poussière. Une accumulation suffisante de poussière sur le filament peut provoquer un bouchon à l'intérieur de la buse.
+
+  - **Surchauffe du pilote moteur de l'extrudeur**
+  
+  Le moteur de l'extrudeur est fortement sollicité tout au long de l'impression. Il effectue des mouvements rapides pour pousser et tirer le plastique. Ces mouvements nécessitent beaucoup de courant, et si les composants électroniques de l'imprimante ne sont pas suffisamment refroidis, cela peut entraîner une surchauffe du pilote du moteur. Ces pilotes sont généralement équipés d’une coupure thermique qui arrête le fonctionnement en cas de température excessive. Si cela se produit, les moteurs des axes X et Y continueront à fonctionner, mais le moteur de l’extrudeur restera immobile. La seule solution consiste à éteindre l'imprimante et à laisser les composants refroidir. Si le problème persiste, envisagez d’ajouter un ventilateur de refroidissement supplémentaire.
+"
+image="stops-extruding-mid-print-1024x1024-1.jpg" %}
+
 ---
 
 {% include message.html 
