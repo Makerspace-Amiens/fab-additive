@@ -139,6 +139,15 @@ image="IMG_20241001_141814.jpg" %}
 
 {%
   include card_collections.html
+  title="Remplacer votre filament"
+  description="Selectionnez votre machine pour suivre le tutoriel de remplacement de votre filament."
+  type="replace_filament"
+%}
+
+---
+
+{%
+  include card_collections.html
   title="Pour aller plus loin"
   description="Explorez d'autres tutoriels pour approfondir vos connaissances"
   type="tutorial"
