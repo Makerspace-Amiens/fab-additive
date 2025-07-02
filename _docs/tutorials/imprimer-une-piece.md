@@ -11,7 +11,7 @@ type: tutorial
 title: Impression 3D avec OrcaSlicer  
 subtitle: Comment imprimer sa pièce avec OrcaSlicer  
 description: Dans ce tutoriel, vous apprendrez à imprimer votre première pièce en utilisant le logiciel OrcaSlicer.  
-author: Remi Lacombe
+author: Rémi Lacombe
 
 time: 3  
 difficulty: 2  
