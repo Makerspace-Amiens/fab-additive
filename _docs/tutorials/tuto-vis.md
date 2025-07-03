@@ -25,7 +25,7 @@ softwares:
   - label: Aucun
     link: ""
 
-todo: 60
+todo: 100
 ---
 
 ### Choisir le bon diamètre de vis
@@ -133,11 +133,10 @@ Pour obtenir une finition propre et éviter que la tête ne dépasse de la pièc
 Vous pouvez utiliser l’outil **Point** ![Point](Point.png) dans une esquisse pour définir rapidement les centres de tous vos perçages. 
 Ensuite, utilisez l’outil **Perçage** ![Percage](Percage.png) (voir image ci-dessous) pour générer l’ensemble des perçages en une seule fonction paramétrique, ce qui facilite la modification. Sélectionnez l'option **Chambrage** et le diamètre de la vis, ici pour une **vis CHC traversante en M3** :
 
-
-![alt text](Lamage.png)
-
 " 
-image="CHC.png" %}
+image="CHC.png" 
+image_2 = "Lamage.png"
+%}
 
 
 {% include step-tuto.html 
@@ -202,13 +201,12 @@ Comme pour les vis CHC, utilisez l’outil **Point** ![Point](Point.png) dans un
 Ensuite, utilisez l’outil **Perçage** ![Percage](Percage.png) avec l’option **Fraisé** (chamfer) pour créer un logement adapté.
 Ici, pour une **vis FHC traversante en M3**.
 
-![alt text](Fraisure.png)
-
 > **Astuce Laser :** Même si la découpe laser ne permet pas de créer de fraisure conique, il est tout à fait possible de **chanfreiner manuellement les trous** à l’aide d’une **fraise en V à 90°** (ou foret). Cela permet d’intégrer proprement la tête d’une vis FHC dans une plaque afin qu’elle soit **affleurante**, sans modifier votre conception.
 
 
 " 
-image="FHC.png" %}
+image="FHC.png" 
+image_2 = "Fraisure.png"%}
 
 {% include card_collections.html
   title="Pour aller plus loin"
