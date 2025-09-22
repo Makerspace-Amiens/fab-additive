@@ -118,7 +118,7 @@ content="Dans le menu déroulant **Filament** sur le panneau de gauche, sélecti
 greyBackground = true  
 image = "Brim.png"  
 content="Pour garantir l'adhérence de la pièce sur le plateau d'impression, rendez-vous sur le panneau **Others** dans le volet gauche.  
-Dans le menu déroulant **Brim type**, sélectionnez **Inner brim only**.
+Dans le menu déroulant **Brim type**, sélectionnez **Outer brim only**.
 
 ![Menu bordure](Brim_Choice_Menu.png)
 
@@ -153,7 +153,7 @@ content="Avant de lancer l'impression, vérifiez que :
 - La machine que vous avez choisie est **toujours disponible**.  
 - Le plateau d'impression est **vide et propre**. Si ce n'est pas le cas, des **lingettes** et du produit de nettoyage sont à votre disposition sur le coté de la servante rouge.
 
-![Nettoyage](Cleaning_Gear.png)
+![Nettoyage](Cleaning_Gear.jpg)
 
 "
 

@@ -7,9 +7,9 @@ hero_darken: true
 component_toc: true  
 doc_header: true
 type: tuto_printers
-draft: true
+
 title: Bambulab A1 Mini, P1P & X1C 
-subtitle: Imprimer une pièces sur les Bambulab 
+subtitle: Imprimer une pièce sur les Bambulab 
 description: Dans ce tutoriel, vous apprendrez à imprimer sur les machines de la marque BambuLab (Rack de gauche en entrant dans le PrinterLab) en utilisant le logiciel OrcaSlicer.  
 author: Rémi Lacombe
 
@@ -38,39 +38,27 @@ Sinon, munissez-vous d'une clé USB sur laquelle vous mettrez votre fichier.
 
 {% include step-tuto.html  
 greyBackground = true  
-image = "Etagere_Artillery.png"  
+image = "Etagere_Bambu.jpg"  
 title="1 - Préparation et vérification"  
 content="Vous vous trouvez maintenant au [**PrinterLab**](/pages/informations), un espace dédié à l'impression 3D au sein du MakerSpace. Vous y trouverez de nombreux modèles d'imprimantes, mais pas de panique, il suffit de suivre les étapes de ce tutoriel ;).
 
-Nous nous concentrerons ici sur l'étagère de droite en entrant, c'est ici que votre pièce prendra forme !"  
+Nous nous concentrerons ici sur l'étagère de gauche en entrant, elle acceuille les imprimantes de la marque bambulab, c'est ici que votre pièce prendra forme !"  
 %}
 
 {% include step-tuto.html  
 greyBackground = true  
-image = "Dashboard_Repetier.png"  
-content="Vérifiez le **moniteur du PC** à gauche de l'étagère, il devrait afficher le **tableau de bord** du serveur.
-
-Si ce n'est pas le cas et que l'écran semble éteint, faites appel à un **fab manager**."  
-%}
-
-{% include step-tuto.html  
-greyBackground = true  
-image = "Powered_Artillery.png"  
-image_2 = "Spool.png"  
+image = "Powered_Bambu_A1_Mini.jpg"  
+image_2 = "Spool.jpg"  
 content="**Sélectionnez** la machine sur laquelle vous imprimerez votre pièce. Elle doit être **disponible** et **allumée**.
 
-Vérifiez également que le **plateau d'impression** est **propre**, qu'il reste du **filament** et qu'il s'agit bien de **PLA** (bobines en bois).
+- Pour des pièces **inférieures à 18 cm** (dans toutes les dimensions) → utilisez les **A1 mini**  
+- Pour des pièces **plus grandes** ou nécessitant plus de volume → utilisez les **P1P**  
+- Pour des pièces **complexes** ou du **multi-couleurs** → utilisez la **X1 Carbon (X1C)**  
 
-En cas de bobine vide, suivez ce [**tutoriel**](/tutorials/3d-print/refill-bobine/) pour la recharger."  
+Vérifiez également que le **plateau d'impression** est **propre**, qu'il reste du **filament** et qu'il s'agit bien de **PLA**."  
 %}
 
-{% include message.html title="Conseil" message="Pour débuter, nous vous conseillons d'utiliser les [Artillery Genius Pro](/pages/machines/), numérotées de **A1** à **A6**" status="is-info" dismissable="true" icon="fas fa-duotone fa-cube" %}
-
-{% include step-tuto.html  
-greyBackground = true  
-image = "Power_Button_Artillery.png"  
-content="Si l'imprimante est éteinte, le bouton d'allumage se trouve à l'**arrière droite de la machine**."  
-%}
+{% include message.html title="En cas de bobine vide" message="Suivez ce [**tutoriel**](/tutorials/3d-print/change-bobine/) pour la recharger." status="is-info" dismissable="true" icon="fas fa-duotone fa-cube" %}
 
 {% include step-tuto.html  
 greyBackground = true  
@@ -91,7 +79,7 @@ greyBackground = true
 image = "Empty_File.png"  
 content="En haut du volet de gauche, dans le **menu déroulant Printer**, **sélectionnez la machine choisie plus tôt**.
 
-![Choix imprimante](Printer_Choice_Menu.png)"  
+![Choix imprimante](Model_Choice_Menu.png)"  
 %}
 
 {% include step-tuto.html  
@@ -106,7 +94,7 @@ Après validation, votre modèle devrait **apparaître au centre du plateau.**"
 greyBackground = true  
 image = "Benchy_On_Plate_Close_Up.png"  
 title="3 - Paramètres d'impression"  
-content="Dans le menu déroulant **Filament** sur le panneau de gauche, sélectionnez **PLA - Rosa**.
+content="Dans le menu déroulant **Filament** sur le panneau de gauche, sélectionnez **Bambu PLA Basic**.
 
 ![Menu filament](Filament_Choice_Menu.png)"  
 %}
@@ -115,7 +103,7 @@ content="Dans le menu déroulant **Filament** sur le panneau de gauche, sélecti
 greyBackground = true  
 image = "Brim.png"  
 content="Pour garantir l'adhérence de la pièce sur le plateau d'impression, rendez-vous sur le panneau **Others** dans le volet gauche.  
-Dans le menu déroulant **Brim type**, sélectionnez **Inner brim only**.
+Dans le menu déroulant **Brim type**, sélectionnez **Outer brim only**.
 
 ![Menu bordure](Brim_Choice_Menu.png)
 
@@ -148,9 +136,9 @@ image = "Window.png"
 content="Avant de lancer l'impression, vérifiez que :  
 - L'impression finira bien **avant l'heure de fermeture du MakerSpace** (consultez un **fab manager**).  
 - La machine que vous avez choisie est **toujours disponible**.  
-- Le plateau d'impression est **vide et propre**. Si ce n'est pas le cas, des **lingettes** et du produit de nettoyage sont à votre disposition sur le coté de la servante rouge.
+- Le plateau d'impression est **vide et propre**. Si ce n'est pas le cas, des **lingettes** et du produit de nettoyage (alcool isopropylique) sont à votre disposition sur le coté de la servante rouge.
 
-![Nettoyage](Cleaning_Gear.png)
+![Nettoyage](Cleaning_Gear.jpg)
 
 "
 
@@ -160,9 +148,13 @@ content="Avant de lancer l'impression, vérifiez que :
 greyBackground = true  
 title="4 - Lancement de l'impression"  
 image = "Window.png"  
-content="Vous pouvez maintenant cliquer sur le bouton ![Imprimer](Print.png) en haut à droite de la fenêtre.
+content="Vous pouvez maintenant cliquer sur le bouton ![Imprimer](Print_Plate.png) en haut à droite de la fenêtre.
 
-Le **programme machine** est envoyé à l'imprimante, et l'impression devrait **commencer**.
+Dans le volet déroulant, sélectionnez l'imprimante choisie plus tôt.
+
+![Choix imprimante](Printer_Choice_Menu.png)
+
+Cliquez ensuite sur le bouton ![Envoyer](Send.png)
 
 Après une phase de préchauffage et de calibration, l'imprimante réalise la **première couche**.
 
@@ -179,9 +171,7 @@ content="Il faut maintenant laisser **l'imprimante faire son travail** !
 
 Pour les longues impressions, il est important de vérifier régulièrement que tout se passe bien.
 
-Si la **pièce se décolle** avant la fin ou qu'un **autre problème** survient, vous devrez **arrêter l'impression** depuis le **panneau de contrôle** du serveur :
-
-![Stopper impression](Stop_Print.gif)
+Si la **pièce se décolle** avant la fin ou qu'un **autre problème** survient, vous devrez **arrêter l'impression** depuis l'écran de l'imprimante.
 "
 %}
 
@@ -200,7 +190,7 @@ Si la pièce ne se décroche pas, **attendez quelques minutes** que le plateau r
 
 {% include step-tuto.html  
 greyBackground = true  
-image = "Remove_Brim_And_Trash.gif"  
+image = "Remove_Brim_And_Trash_Bambu.gif"  
 content="Retirez les **bordures** et **dépôts** de filament sur le plateau. Si vous avez activé l'option, **retirez également les supports**.
 
 Jetez vos déchets dans la poubelle située à l'entrée du **PrinterLab**.
