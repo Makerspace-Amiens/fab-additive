@@ -26,15 +26,28 @@ todo: 100
 
 # Impression 3D d'une pièce
 
-### Introduction
+Ce **tutoriel d'initiation** vous guidera de l'**exportation** de votre modèle jusqu'a la **fin de l'impression**, en vous aidant à éviter les erreurs courantes.
 
-Ce **tutoriel d'initiation** vous guidera de l'**importation** de votre modèle jusqu'a la **fin de l'impression**, en vous aidant à éviter les erreurs courantes.
+Avant de débuter ce tutoriel, nous supposons que votre pièce **a déjà été conçue et exportée sur une clé USB** au format **.STL**, **.3MF** ou **.STEP** depuis votre logiciel de CAO (OnShape, Solidworks, FreeCAD, Fusion 360...).
 
-Avant de débuter ce tutoriel, nous supposons que votre pièce **a déjà été conçue et exportée** au format **.STL** ou **.3MF** depuis votre logiciel de CAO (OnShape, Solidworks, FreeCAD, Fusion 360...).
+{% include message.html 
+   title="Pour le faire dans OnShape :" 
+   message="Dans le volet **Pièces** en bas à gauche, **sélectionnez la ou les pièces** que vous souhaitez **exporter** :
+   ![Select](Select_Part.png)  
+   Clique droit sur la sélection, puis **Exporter**  
+   ![alt text](Export.png)  
+   Dans le menu d'exportation qui s'ouvre, nommez votre fichier, et sélectionnez le format de sortie.
+   Pour un rendu optimal, nous conseillons l'export en **.STEP**  
+   ![alt text](Export_Window.png)  
+   Mettez finalement le fichier téléchargé sur une **clé USB**.
+
+   " 
+   status="is-info" 
+   dismissable="false" 
+   icon="fas fa-exclamation-cube" 
+%}
 
 Si votre modèle n'est pas encore créé, rendez-vous sur la page [**tutoriels CAO**](/pages/tutoriels-cao).
-
-Sinon, munissez-vous d'une clé USB sur laquelle vous mettrez votre fichier.
 
 {% include step-tuto.html  
 greyBackground = true  
